@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  width: 100%;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.is-open {
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  fill: currentColor;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-box {
+  width: 830px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.summary {
+  width: 100%;
+  padding: 20px 80px;
+
+  background-color: #373741;
+  color: #dcd3ca;
+}
+
+.my-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.22;
+  text-align: center;
+}
+
+.title {
+  margin-top: 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+
+  color: #fefefe;
+}
+
+.title-two {
+  margin-top: 40px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+.summery__text {
+  margin-top: 40px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fefefe;
+}
+
+.main-content {
+  padding: 40px 80px;
+}
+
+.project-list {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.project__name {
+  margin-bottom: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.project__text,
+.project__link {
+  /* display: block; */
+  font-family: 'Montserrat';
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+
+  transition: color 250ms linear;
+}
+
+.project__link {
+  text-decoration: underline;
+}
+
+.link-box {
+  display: flex;
+  gap: 20px;
+}
+.project__link:hover,
+.project__link:focus {
+  color: #ae6716;
+  text-decoration: underline;
+}
+
+.project__text--strong {
+  font-weight: 700;
+}
+
+.works-list,
+.education-list {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.education-list {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.work__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.period-works {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+
+.duties-list {
+  list-style: disc;
+  margin-left: 15px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.aside-bar {
+  width: 370px;
+  background-color: #e1d8cf;
+}
+
+.aside-box {
+  padding: 50px 40px;
+}
+
+.aside-title,
+.title-project {
+  padding: 10px 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.22;
+  text-transform: uppercase;
+
+  background-color: #373741;
+  color: #e1d8cf;
+}
+
+.contacts-list,
+.tech-skills-list,
+.soft-skills-list {
+  padding: 10px 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.71;
+
+  color: #000;
+}
+
+.contact-list__link {
+  color: #000;
+}
+
+.tech-skills-list,
+.soft-skills-list {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.photo-box {
+  padding: 20px;
+}
+
+.photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+}

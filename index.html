@@ -5,245 +5,363 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dykhal Vitalii</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./style/styled.css" />
   </head>
   <body>
-    <div class="hidden">
-      <main class="main_content">
-        <div class="main_content_section">
-          <div class="about_me">
-            <h2 class="tim">Front-End Developer</h2>
-            <h1 class="name">Vitalii Dykhal</h1>
+    <div class="wrapper">
+      <main class="main-box">
+        <section class="summary">
+          <p class="my-name">Vitaliy Dykhal</p>
+          <h1 class="title">Junior front-end developer</h1>
+          <h2 class="title-two">Summery</h2>
 
-            <p class="description">
-              Let me introduce myself 😜. I'm fond of active sports like sport tourism and rock
-              climbing. I'm good at self-education and I'm a critical thinker. I like to learn
-              something new, and also I'm tend to learn new technologies and tools. You can rely on
-              me, when we work in a team, or I can play solo 💪. And I'm sure, that you need me in
-              your company ✅
-            </p>
-          </div>
+          <p class="summery__text">
+            Let's get to know each other. I am fond of active sports (walking sports tourism and
+            climbing). I consider myself a critical thinker, as I understand myself well. I like to
+            learn something new, I am currently studying the latest technologies and tools. I can
+            work in a team, as well as independently.
+          </p>
+          <!-- <p class="summery__text">
+            Давайте познайомимося. Я захоплююся активними видами спорту (пішохідний спортивний
+            туризм і скалолазіння). Вважаю себе критичним мислителем, так як добре себе розумію.
+            Люблю вивчати щось нове, На сучасному етапі вивчаю новітні технології та інструменти.
+            Вмію працювати в команді, а також самостійно.
+          </p> -->
+          <!-- <p class="summery__text">
+            Let me introduce myself 😜. I'm fond of
+            active sports like sport tourism and rock climbing. I'm good at self-education and I'm a
+            critical thinker. I like to learn something new, and also I'm tend to learn new
+            technologies and tools. You can rely on me, when we work in a team, or I can play solo
+            💪. And I'm sure, that you need me in your company ✅
+          </p> -->
+        </section>
 
-          <!--2 контейнер-->
-          <div class="my_projects">
-            <h3 class="Projects">Projects</h3>
-            <ol class="my_projects_list">
-              <li class="my_projects_item">
-                <span class="my_projects_text">
-                  <a href="https://byht1.github.io/mountains/" class="my_project_link">
-                    Project 1</a
+        <div class="main-content">
+          <section class="project">
+            <h2 class="title-project">Project</h2>
+
+            <ul class="project-list">
+              <li class="project-list__elements">
+                <h3 class="project__name">Кріо-мед-сервіс</h3>
+                <p class="project__text">
+                  <span class="project__text--strong">Commercial project</span>
+                </p>
+                <p class="project__text">
+                  <span class="project__text--strong">Technology stack:</span> JS, SASS, HTML,
+                  Parcel.
+                </p>
+
+                <div class="link-box">
+                  <a class="project__link" target="_blank" href="https://www.kriomedservice.com"
+                    >Live site page</a
                   >
-                  ................................
-                  <span class="my_project_bracket">[</span> HTML5, CSS3, JavaScript
-                  <span class="my_project_bracket">]</span>
-                </span>
+                </div>
               </li>
-              <li class="my_projects_item">
-                <span class="my_projects_text">
-                  <a href="https://byht1.github.io/typeScript-test/" class="my_project_link">
-                    Project 2</a
-                  >
-                  ....................
-                  <span class="my_project_bracket">[</span> React, TypeScript, JavaScript
-                  <span class="my_project_bracket">]</span>
-                </span>
-              </li>
-              <li class="my_projects_item">
-                <span class="my_projects_text">
+              <li class="project-list__elements">
+                <h3 class="project__name">Mountains</h3>
+                <p class="project__text">
+                  <span class="project__text--strong">What is the project about?</span> About the 16
+                  highest peaks in the world.
+                </p>
+                <p class="project__text">
+                  <span class="project__text--strong">Technology stack:</span> JS, SASS, HTML.
+                </p>
+
+                <div class="link-box">
                   <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://byht1.github.io/mountains/"
+                  >
+                    Live site page</a
+                  >
+                  <a class="project__link" target="_blank" href="https://byht1.github.io/mountains/"
+                    >Repository on GitHub</a
+                  >
+                </div>
+              </li>
+              <li class="project-list__elements">
+                <h3 class="project__name">CurrencyCalculator</h3>
+                <p class="project__text">
+                  <span class="project__text--strong">What is the project about?</span> Currency
+                  conversion. Current data is taken from open API (НБУ, ПриватБанк, MonoBank).
+                </p>
+                <p class="project__text">
+                  <span class="project__text--strong">Technology stack:</span> React, TypeScript,
+                  styled-components, axios.
+                </p>
+                <div class="link-box">
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://byht1.github.io/typeScript-test/"
+                  >
+                    Live site page</a
+                  >
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://github.com/byht1/typeScript-test"
+                    >Repository on GitHub</a
+                  >
+                </div>
+              </li>
+              <li class="project-list__elements">
+                <h3 class="project__name">PhoneBook</h3>
+                <p class="project__text">
+                  <span class="project__text--strong">What is the project about?</span> A book for
+                  storing personal contact numbers.
+                </p>
+                <p class="project__text">
+                  <span class="project__text--strong">Technology stack:</span> React, Redux Toolkit,
+                  React-router, styled-components, axios, JS.
+                </p>
+                <div class="link-box">
+                  <a
+                    class="project__link"
+                    target="_blank"
                     href="https://byht1.github.io/goit-react-hw-08-phonebook/"
-                    class="my_project_link"
                   >
-                    Project 3</a
+                    Live site page</a
                   >
-                  .......
-                  <span class="my_project_bracket">[</span> React, Redux Toolkit, React-router,
-                  JavaScript
-                  <span class="my_project_bracket">]</span>
-                </span>
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://byht1.github.io/goit-react-hw-08-phonebook/"
+                    >Repository on GitHub</a
+                  >
+                </div>
               </li>
-              <li class="my_projects_item">
-                <span class="my_projects_text">
-                  <a href="https://vladaboiko.github.io/Psychology/" class="my_project_link">
-                    Project 4</a
-                  >
-                  .......................................
-                  <span class="my_project_bracket">[</span> HTML5, CSS3, JavaScript
-                  <span class="my_project_bracket">]</span>
-                </span>
-              </li>
-              <li class="my_projects_item">
-                <span class="my_projects_text">
-                  <a href="https://byht1.github.io/team-project/" class="my_project_link">
-                    Project 5</a
-                  >
-                  ...................................
-                  <span class="my_project_bracket">[</span> HTML5, CSS3, JavaScript
-                  <span class="my_project_bracket">]</span>
-                </span>
-              </li>
-              <li class="my_projects_item">
-                <span class="my_projects_text">
-                  <a href="https://byht1.github.io/goit-markup-hw-08/" class="my_project_link">
-                    Project 6</a
-                  >
-                  .............................................................
-                  <span class="my_project_bracket">[</span> HTML5, CSS3
-                  <span class="my_project_bracket">]</span>
-                </span>
-              </li>
-            </ol>
-          </div>
-
-          <!--3 контейнер-->
-          <div class="my_work_experience">
-            <h3 class="Projects">Work Experience</h3>
-
-            <!--компанія 1-->
-            <div class="my_work_experience_company_blok">
-              <h4 class="my_work_experience_position">
-                Design engineer <span class="my_work_experience_company">Construction</span>
-              </h4>
-              <p class="my_work_experience_time">
-                September 2021 - 2022 <span class="my_project_b">|</span> Ukraine
-              </p>
-              <ul class="my_work_experience_duties">
-                <li class="my_work_experience_dute">Maintenance of technical documentation</li>
-                <li class="my_work_experience_dute">Design and publication of working projects</li>
-                <li class="my_work_experience_dute">Negotiating with customers</li>
-              </ul>
-            </div>
-
-            <!--компанія 2-->
-            <div>
-              <h4 class="my_work_experience_position">Electrician</h4>
-              <p class="my_work_experience_time">
-                March 2017 - October 2020 <span class="my_project_b">|</span> Ukraine
-              </p>
-              <ul class="my_work_experience_duties">
-                <li class="my_work_experience_dute">Installation of wiring</li>
-                <li class="my_work_experience_dute">Installation of electrocytes</li>
-                <li class="my_work_experience_dute">
-                  Connection and installation of video systems
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!--4 контейнер-->
-          <div class="my_education">
-            <h3 class="Projects">Education</h3>
-
-            <ul class="my_work_experience_duties">
-              <li class="my_work_experience_dute">
-                <h4 class="my_education_position">Courses Full Stack</h4>
-                <h4 class="Management">GoIt</h4>
-                <p class="my_work_experience_time">
-                  January 2022 - Nowadays <span class="my_project_b">|</span> Ukraine
+              <li class="project-list__elements">
+                <h3 class="project__name">IceCream</h3>
+                <p class="project__text">
+                  <span class="project__text--strong">Team project.</span>
                 </p>
+                <p class="project__text">
+                  <span class="project__text--strong">Technology stack:</span> JS, SCSS, HTML.
+                </p>
+                <div class="link-box">
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://byht1.github.io/team-project/"
+                  >
+                    Live site page</a
+                  >
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://byht1.github.io/team-project/"
+                    >Repository on GitHub</a
+                  >
+                </div>
               </li>
-              <li class="my_work_experience_dute">
-                <h4 class="my_education_position">Energetic</h4>
-                <h4 class="Management">
+              <li class="project-list__elements">
+                <h3 class="project__name">Psychology</h3>
+                <p class="project__text">
+                  <span class="project__text--strong">Team project.</span>
+                </p>
+                <p class="project__text">
+                  <span class="project__text--strong">Technology stack:</span> JS, SCSS, HTML.
+                </p>
+                <div class="link-box">
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://github.com/VladaBoiko/Psychology"
+                  >
+                    Live site page</a
+                  >
+                  <a
+                    class="project__link"
+                    target="_blank"
+                    href="https://vladaboiko.github.io/Psychology/"
+                    >Repository on GitHub</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="works">
+            <h2 class="title-project">Work experience</h2>
+
+            <ul class="works-list">
+              <li class="works-list__elements">
+                <h3 class="work__name">Design engineer Construction</h3>
+                <p class="period-works">September 2021 - 2022 | Ukraine</p>
+                <ul class="duties-list">
+                  <li class="duties-list__elements">
+                    <p class="duties-list__text">Maintenance of technical documentation</p>
+                  </li>
+                  <li class="duties-list__elements">
+                    <p class="duties-list__text">Design and publication of working projects</p>
+                  </li>
+                  <li class="duties-list__elements">
+                    <p class="duties-list__text">Negotiating with customers</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="works-list__elements">
+                <h3 class="work__name">Electrician</h3>
+                <p class="period-works">March 2017 - October 2020 | Ukraine</p>
+                <ul class="duties-list">
+                  <li class="duties-list__elements">
+                    <p class="duties-list__text">Installation of wiring</p>
+                  </li>
+                  <li class="duties-list__elements">
+                    <p class="duties-list__text">Installation of electrocytes</p>
+                  </li>
+                  <li class="duties-list__elements">
+                    <p class="duties-list__text">Connection and installation of video systems</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="title-project">Education</h2>
+
+            <ul class="education-list">
+              <li class="works-list__elements">
+                <h3 class="work__name">
+                  Courses Full Stack <br />
+                  GoIt
+                </h3>
+                <p class="period-works">January 2022 - Nowadays | Ukraine</p>
+              </li>
+              <li class="works-list__elements">
+                <h3 class="work__name">
+                  Energetic <br />
                   National university of life and environmental sciences of Ukraine
-                </h4>
-                <p class="my_work_experience_time">
-                  Septermber 2018 - June 2022 <span class="my_project_b">|</span> Ukraine
-                </p>
+                </h3>
+                <p class="period-works">September 2018 - June 2022 | Ukraine</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <aside class="aside-bar">
+        <div class="photo-box">
+          <img
+            class="photo"
+            src="./img/photo_2022-07-21_23-27-05-removebg-preview.jpg"
+            alt="my photo"
+          />
+        </div>
+        <div class="aside-box">
+          <div class="contacts-box">
+            <h2 class="aside-title">Contacts</h2>
+
+            <ul class="contacts-list">
+              <li class="contact-list__elements">
+                <a class="contact-list__link" target="_blank" href="tel:+380964116713"
+                  >+38 096 411 6713</a
+                >
+              </li>
+              <li class="contact-list__elements">
+                <a class="contact-list__link" target="_blank" href="mailto:vitalikbyht1@gmail.com"
+                  >vitalikbyht1@gmail.com</a
+                >
+              </li>
+              <li class="contact-list__elements">
+                <a
+                  class="contact-list__link"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/vitalii-dykhal-45610a246/"
+                  >linkedIn.com</a
+                >
+              </li>
+              <li class="contact-list__elements">
+                <a class="contact-list__link" target="_blank" href="https://github.com/byht1"
+                  >github</a
+                >
+              </li>
+              <li class="contact-list__elements">
+                <a
+                  class="contact-list__link"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100006428414381"
+                  >facebook.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="tech-skills">
+            <h2 class="aside-title">Tech Skills</h2>
+
+            <ul class="tech-skills-list">
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">HTML5</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">CSS3</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">GIT</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">JavaScript</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">React.js</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">React-router</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">Redux Toolkit</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">RTK Query</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">TypeScript</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">Parcel</p>
+              </li>
+              <li class="tech-skills-list__elements">
+                <p class="tech-skills-list__text">WebPack</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="soft-skills">
+            <h2 class="aside-title">Soft Skills</h2>
+
+            <ul class="soft-skills-list">
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Agile</p>
+              </li>
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Leadership</p>
+              </li>
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Teamwork</p>
+              </li>
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Analytical</p>
+              </li>
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Training</p>
+              </li>
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Communication</p>
+              </li>
+              <li class="soft-skills-list__elements">
+                <p class="soft-skills-list__text">Problem Solving</p>
               </li>
             </ul>
           </div>
         </div>
-
-        <!--Сайт бар-->
-        <aside class="sibedar">
-          <img class="photo" width="370px" src="img/photo_2022-07-21_23-27-05.jpg" alt="my photo" />
-
-          <!--контакты-->
-          <div class="contacts">
-            <h3 class="zagolovok">Contacts</h3>
-            <div>
-              <a class="sulka" href="tel:+380964116713">
-                <svg class="svg-icon" width="16" height="12">
-                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 411 6713</a
-              >
-            </div>
-            <div>
-              <a class="sulka" href="mailto:vitalikbyht1@gmail.com">
-                <svg class="svg-icon" width="16" height="12">
-                  <use href="./img/symbol-defs.svg#icon-maildotru-1"></use>
-                </svg>
-                vitalikbyht1@gmail.com</a
-              >
-            </div>
-            <div>
-              <a class="sulka" href="https://www.linkedin.com/in/vitalii-dykhal-45610a246/">
-                <svg class="svg-icon" width="16" height="12">
-                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-                linkedIn.com</a
-              >
-            </div>
-            <div>
-              <a class="sulka" href="https://github.com/byht1">
-                <svg class="svg-icon" width="16" height="12">
-                  <use href="./img/symbol-defs.svg#icon-github-1"></use>
-                </svg>
-                github.com</a
-              >
-            </div>
-            <div>
-              <a class="sulka" href="https://www.facebook.com/profile.php?id=100006428414381">
-                <svg class="svg-icon" width="16" height="12">
-                  <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-                facebook.com</a
-              >
-            </div>
-          </div>
-
-          <!--Tech Skills-->
-          <div class="tech_skills">
-            <h3 class="zagolovok">Tech Skills</h3>
-            <ul class="tech_skills_list">
-              <li class="HTML5"><span class="HTMLS_stils">HTML5</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">CSS3</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">GIT</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">WebPack</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">JavaScript</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">React.js</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">React-router</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">Redux Toolkit</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">RTK Query</span></li>
-              <li class="HTML5"><span class="HTMLS_stils">TypeScript</span></li>
-              <!-- <li class="HTML5"><span class="HTMLS_stils">Node.js</span></li> -->
-            </ul>
-          </div>
-
-          <!--Soft Skills-->
-          <div class="soft_skills">
-            <h3 class="zagolovok">Soft Skills</h3>
-            <ul class="soft_skills_list">
-              <li class="scrum"><span class="scrum_stils">Agile</span></li>
-              <li class="scrum"><span class="scrum_stils">Leadership</span></li>
-              <li class="scrum"><span class="scrum_stils">Teamwork</span></li>
-              <li class="scrum"><span class="scrum_stils">Analytical</span></li>
-              <li class="scrum"><span class="scrum_stils">Training</span></li>
-              <li class="scrum"><span class="scrum_stils">Communication</span></li>
-              <li class="scrum"><span class="scrum_stils">Problem Solving</span></li>
-            </ul>
-          </div>
-        </aside>
-      </main>
+      </aside>
     </div>
   </body>
 </html>
